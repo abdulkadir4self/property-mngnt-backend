@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(cors());
 // app.use(cors({ origin: 'http://localhost:5173' }));
 
-
+app.get('/favicon.png', (req, res) => res.status(204));
 
 // property route here
 const propertyRoutes = require('./src/routes/propertyRoutes');
